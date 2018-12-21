@@ -1,0 +1,47 @@
+==73== Memcheck, a memory error detector
+==73== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==73== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==73== Command: ./lcd_main 
+==73== 
+TIME_OF_DAY_SEC set to: 0
+set_tod_from_secs(     0, &tod );
+tod is {       
+  .hours   = 12
+  .minutes = 0
+  .seconds = 0
+  .ispm    = 0
+}              
+Simulated time is: 12 : 00 : 00 am
+
+Checking results for display bits
+set_display_bits_from_tod(tod, &state);
+
+state is:
+        3         2         1         0
+index: 10987654321098765432109876543210
+bits:  00010000110101101101111110111111
+guide:    |      |      |      |      |
+
+Running lcd_update()
+
+LCD_DISPLAY_PORT is:
+        3         2         1         0
+index: 10987654321098765432109876543210
+bits:  00010000110101101101111110111111
+guide:    |      |      |      |      |
+
+LCD Clock Display:
+         ~~   ~~   ~~          
+      |    |o|  | |  |         
+         ~~                    
+AM    | |   o|  | |  |         
+         ~~   ~~   ~~          
+==73== 
+==73== HEAP SUMMARY:
+==73==     in use at exit: 0 bytes in 0 blocks
+==73==   total heap usage: 1 allocs, 1 frees, 512 bytes allocated
+==73== 
+==73== All heap blocks were freed -- no leaks are possible
+==73== 
+==73== For counts of detected and suppressed errors, rerun with: -v
+==73== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

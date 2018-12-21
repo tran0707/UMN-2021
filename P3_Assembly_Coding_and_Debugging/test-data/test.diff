@@ -1,0 +1,33 @@
+TIME_OF_DAY_SEC set to: 80000					TIME_OF_DAY_SEC set to: 80000
+set_tod_from_secs( 80000, &tod );				set_tod_from_secs( 80000, &tod );
+tod is {       							tod is {       
+  .hours   = 10							  .hours   = 10
+  .minutes = 13							  .minutes = 13
+  .seconds = 20							  .seconds = 20
+  .ispm    = 1							  .ispm    = 1
+}              							}              
+Simulated time is: 10 : 13 : 20 pm				Simulated time is: 10 : 13 : 20 pm
+
+Checking results for display bits				Checking results for display bits
+set_display_bits_from_tod(tod, &state);				set_display_bits_from_tod(tod, &state);
+
+state is:							state is:
+        3         2         1         0				        3         2         1         0
+index: 10987654321098765432109876543210				index: 10987654321098765432109876543210
+bits:  00100000110011111100001101001111				bits:  00100000110011111100001101001111
+guide:    |      |      |      |      |				guide:    |      |      |      |      |
+
+Running lcd_update()						Running lcd_update()
+
+LCD_DISPLAY_PORT is:						LCD_DISPLAY_PORT is:
+        3         2         1         0				        3         2         1         0
+index: 10987654321098765432109876543210				index: 10987654321098765432109876543210
+bits:  00100000110011111100001101001111				bits:  00100000110011111100001101001111
+guide:    |      |      |      |      |				guide:    |      |      |      |      |
+
+LCD Clock Display:						LCD Clock Display:
+         ~~        ~~          					         ~~        ~~          
+      | |  |o   |    |         					      | |  |o   |    |         
+                   ~~          					                   ~~          
+      | |  |o   |    |         					      | |  |o   |    |         
+PM       ~~        ~~						PM       ~~        ~~          
