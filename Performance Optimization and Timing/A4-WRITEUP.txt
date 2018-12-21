@@ -1,0 +1,286 @@
+			      ____________
+
+			       A4 WRITEUP
+			      ____________
+
+
+- Name: Khoa Tran
+- NetID: tran0707
+
+Answer the questions below according to the lab specification. Write
+your answers directly in this text file and submit it to complete the
+lab.
+
+
+PROBLEM 1: optimized_matrix_trans_mult_vec()
+============================================
+
+  Do your timing study on apollo.cselabs.umn.edu
+
+
+(A) Paste Source Code
+~~~~~~~~~~~~~~~~~~~~~
+
+  Paste a copy of your source code for the function
+  optimized_matrix_trans_mult_vec() below.
+Answer:
+-------
+int optimized_matrix_trans_mult_vec(matrix_t mat, vector_t vec, vector_t res){
+  long vec_len = vec.len;
+  long res_len = res.len;
+  long numr = mat.rows;
+  long numc = mat.cols;
+  if(mat.rows != vec_len){
+    printf("mat.rows (%ld) != vec.len (%ld)\n", numr ,vec_len);
+    return 1;
+  }
+  if(mat.cols != res_len){
+    printf("mat.cols (%ld) != res.len (%ld)\n",numc ,res_len);
+    return 2;
+  }
+  for (int j = 0; j < res_len ; j++){
+      VSET(res,j,0);
+  }
+  int i;
+  for (i = 0; i < numr ; i+=4){
+			// get element of vec using rows i //
+      int veci0 = VGET(vec,i+0);
+      int veci1 = VGET(vec,i+1);
+      int veci2 = VGET(vec,i+2);
+      int veci3 = VGET(vec,i+3);
+
+  for (int j = 0; j < numc; j++){
+      // first column element //
+      int elij0 = MGET(mat,i+0,j);
+      int prod0 = elij0 * veci0;
+      // second column element //
+      int elij1 = MGET(mat,i+1,j);
+      int prod1 = elij1 * veci1;
+      // third column element //
+      int elij2 = MGET(mat,i+2,j);
+      int prod2 = elij2 * veci2;
+      // fourth column element //
+      int elij3 = MGET(mat,i+3,j);
+      int prod3 = elij3 * veci3;
+      // addition and set to res //
+      int cur = VGET(res,j);
+      int sum = cur + prod0 + prod1 + prod2 + prod3;
+      VSET(res,j,sum);
+  }
+}
+  for(; i< numr; i++){   //clean up loop for the remain elements
+      int veci = VGET(vec,i);
+      for(int j = 0; j < numc; j++){
+          int elij = MGET(mat,i,j);
+          int prod = elij * veci;
+          int cur = VGET(vec,j);
+          int sum = cur + prod;
+          VSET(res,j,sum);
+      }
+  }
+  return 0;
+}
+
+
+(B) Timing on Apollo
+~~~~~~~~~~~~~~~~~~~~
+
+  Paste a copy of the results of running `mult_bench' on
+  apollo.cselabs.umn.edu in the space below which shows how your
+  performance optimizations improved on the baseline codes.
+	Answer:
+	-------
+	SIZE       BASE       NORM        OPT BSPDUP NSPDUP POINTS
+   512 1.3750e-03 1.0510e-03 6.6000e-04   2.08   1.59      1
+  1024 2.8866e-02 4.5440e-03 2.7410e-03  10.53   1.66      5
+  2048 2.9910e-01 1.9190e-02 1.1789e-02  25.37   1.63     12
+  4096 1.2048e+00 7.6701e-02 4.5045e-02  26.75   1.70     13
+  8192 4.5675e+00 2.7439e-01 1.9507e-01  23.41   1.41     11
+RAW POINTS: 42
+TOTAL POINTS: 35 / 35
+
+(C) Optimizations
+~~~~~~~~~~~~~~~~~
+
+  Describe in some detail the optimizations you used to speed the code
+  up.  THE CODE SHOULD CONTAIN SOME COMMENTS already to describe these
+  but in the section below, describe in English the techniques you used
+  to make the code run faster.  Format your descriptions into discrete
+  chunks such as.
+	Answer:
+	-------
+        Optimization 1:
+				---------------
+				I did switch the for loop to run for rows first and then columns.
+				This should make run faster because cache is favorable for rows.
+				When it loaded in the first columns element, it also load the whole
+				rows into cache. This helps to decrease the number of cache missed
+				when it want to get the next element of rows. It leads to speed up
+				the matrix multiplication of the transpose matrix.
+
+        Optimization 2:
+				---------------
+				Multiply and add four element of matrix with the corresponding element
+				of vec instead of one by one of the baseline_matrix_trans_mult_vec
+				function to improve the pipeline of cache. It should make run faster
+				because instead do one multiply at one time, my optimized code do
+				four multiplies at one time and adds the results of each columns together.
+				It cooperate with the Optimization 1 to even more speed up the matrix
+				multiplication since all elements already in cache.
+				The remaining of elements will be take care by the last for loop.
+				For example, if I have matrix of five rows. The last row will be
+				take care by the last loop to complete the matrix multiplication.
+
+				Optimization 3:
+				---------------
+				Store the value of vec.len, res.len, mat.cols, mat.rows into a separate
+				variables name. All vec.len, res.len, mat.cols, mat.rows are pointers
+				to different structs, when we use it in a for loop, it has to go to the
+				matvec.h header file and find the corresponding number for every single
+				call of the loop. It leads to slows the matrix multiplication	down.
+				If I store those values into a variable, when I call it in a for loop,
+				it doesn't need to go and look for the value in the header file.
+				This should make the evaluation time for this matrix multiplication
+				much faster.
+
+  Full credit solutions will have a least two optimizations.
+
+
+PROBLEM 2: Timing Rows vs Columns
+=================================
+
+  Do your timing study on apollo.cselabs.umn.edu
+
+
+(A) Min Size for Algorithmic Differences
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Determine size of input array does one start to see a measurable
+  difference in the performance of the linear and logarithmic
+  algorithms.  Produce a timing table which includes all algorithms
+  which clearly demonstrates an uptick in the times associated with some
+  while others remain much lower.  Identify what size this appears to be
+  a occur.
+Answer:
+-------
+Timing table:
+>./search_benchmark 1 15 1
+
+LENGTH   SEARCHES         array        binary          list          tree
+    2        4      6.0000e-06      6.0000e-06      5.0000e-06      5.0000e-06
+    4        8      1.0000e-05      1.0000e-05      1.0000e-05      1.1000e-05
+    8       16      2.0000e-05      1.9000e-05      2.0000e-05      2.2000e-05
+   16       32      4.3000e-05      4.3000e-05      4.2000e-05      4.2000e-05
+   32       64      8.7000e-05      8.6000e-05      8.6000e-05      8.6000e-05
+   64      128      1.6800e-04      1.6800e-04      1.8300e-04      1.6700e-04
+>  128      256      3.8200e-04      3.5700e-04      4.2400e-04      3.2700e-04
+  256      512      7.9200e-04      6.7600e-04      9.8000e-04      6.7500e-04
+  512     1024      1.8630e-03      1.3450e-03      2.8540e-03      1.4990e-03
+ 1024     2048      4.9890e-03      2.8540e-03      1.4123e-02      3.1840e-03
+ 2048     4096      1.4467e-02      5.5400e-03      7.0991e-02      6.5170e-03
+ 4096     8192      4.8901e-02      1.1561e-02      3.7469e-01      1.3801e-02
+ 8192    16384      1.7303e-01      2.2887e-02      1.5528e+00      2.8104e-02
+16384    32768      6.3462e-01      4.6265e-02      6.0637e+00      5.7545e-02
+32768    65536      2.3561e+00      9.6527e-02      2.2018e+01      1.1128e-01
+
+
+At input size of 128, the performance of the linear and logarithmic
+algorithms start to see a measurable differences.
+
+From the timing table, we can see clearly that at the array size of 256, the
+performance differences between the linear vs logarithmic algorithms start to
+change a lot. For example, the linear search in an array and linked list
+performance at 3.8200e-04 and 4.2400e-04 while the binary search in the sorted
+array and tree is 3.5700e-04 and 3.2700e-04. This is clearly see some
+differences compare with also no different of the above 256 array size.
+
+(B) List vs Array
+~~~~~~~~~~~~~~~~~
+
+  Determine whether the linear array and linked list search remain
+  approximately at the same performance level as size increases to large
+  data or whether one begins to become favorable over other. Determine
+  the approximate size at which this divergence becomes obvious. Discuss
+  reasons WHY this difference arises.
+Answer:
+-------
+Timing table:
+>./search_benchmark 1 15 1 la
+LENGTH   SEARCHES      list            array
+    2        4      5.0000e-06      7.0000e-06
+    4        8      9.0000e-06      1.0000e-05
+    8       16      1.9000e-05      2.2000e-05
+   16       32      4.1000e-05      4.2000e-05
+>   32       64      8.9000e-05      8.1000e-05
+   64      128      1.8000e-04      1.7700e-04
+  128      256      4.0600e-04      3.6400e-04
+  256      512      9.3400e-04      8.2400e-04
+  512     1024      2.5560e-03      1.8460e-03
+ 1024     2048      1.2515e-02      4.8350e-03
+ 2048     4096      7.1925e-02      1.4153e-02
+ 4096     8192      3.3303e-01      4.6191e-02
+ 8192    16384      1.4322e+00      1.6643e-01
+16384    32768      5.3092e+00      6.1039e-01
+32768    65536      2.1816e+01      2.3523e+00
+
+The linear array search is getting better performance level as size increases to
+large data compare with the linked list search.
+At input size of 32, the performances start to show the
+differences that becomes favorable to the linear array search.
+Below size 32, the performances are shown that the linear search for linked lists
+has a better performances compare to the Linear search for array. It is not
+what I expect for this performance.
+Linear search of an array should be faster compare with the linear search of
+the linked list is because the array elements are allocated memory in
+contiguous memory, while a linked list are non-contiguous in memory.
+In this homework, we try to jump the queries number, so it will not
+favor cache for any algorithms. Even in this condition, an array will have more
+advantages not only the memory layout but also the ability to direct access all
+elements in array.
+
+(C) Tree vs Array
+~~~~~~~~~~~~~~~~~
+
+  Compare the binary array search and binary tree search on small to
+  very large arrays. Determine if there is a size at which the
+  performance of these two begins to diverge. If so, describe why this
+  might be happening based on your understanding of the data structures
+  and the memory system.
+Answer:
+-------
+Timing table:
+>./search_benchmark 1 16 1 tb
+LENGTH   SEARCHES      tree           binary
+    2        4      5.0000e-06      5.0000e-06
+    4        8      1.2000e-05      1.0000e-05
+    8       16      2.0000e-05      2.0000e-05
+   16       32      4.3000e-05      4.0000e-05
+   32       64      8.1000e-05      8.2000e-05
+   64      128      1.6100e-04      1.6600e-04
+  128      256      3.3400e-04      3.2100e-04
+  256      512      6.6100e-04      6.7500e-04
+  512     1024      1.3420e-03      1.3520e-03
+ > 1024     2048      2.8820e-03      2.6960e-03
+ 2048     4096      5.8310e-03      5.4230e-03
+ 4096     8192      1.2162e-02      1.1026e-02
+ 8192    16384      2.5441e-02      2.2498e-02
+16384    32768      5.1901e-02      4.5071e-02
+32768    65536      1.0894e-01      9.1451e-02
+65536   131072      2.2238e-01      1.8538e-01
+
+At size of 1024, the performance of these two begins to diverge. The binary
+array search has a better performance when the array size is above of 1024.
+Above size of 1024, the performance is vary. This is because the timing of
+search for different algorithms are random with the small size of array.
+In term of memory, the sorted array should be faster due to the layout of it
+elements inside of memory. It is a big row block of memory that contain the
+whole array in it. On the other hand, binary tree is layout way more
+complicated which leads to lower the performance for a large size of input.
+Also, the ability to direct access all elements in array helps it to speed up.
+
+(D) OPTIONAL MAKEUP CREDIT
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  If you decided to make use of a table of function pointers/structs
+  which is worth makeup credit, describe your basic design for this
+  below.
