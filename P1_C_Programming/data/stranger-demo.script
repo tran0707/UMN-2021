@@ -1,0 +1,31 @@
+add Lucas
+add Mike
+add Dustin
+add Will
+add El
+print 
+show 
+find Mike
+find Nancy
+add Nancy
+show 
+find Max
+add Max
+show 
+print 
+find Barb
+add Barb
+show 
+save stranger.tree
+clear 
+print 
+add Demigorgon
+show 
+load stranger.tree
+show 
+add Jim
+add Joyce
+show 
+load stranger.tree
+show 
+quit 

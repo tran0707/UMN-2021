@@ -1,0 +1,58 @@
+CFLAGS = -Wall -g
+CC     = gcc $(CFLAGS)
+
+PROGRAMS = \
+	save_deltas \
+	deltas_main \
+	print_graph_demo \
+	graph_file \
+	tree_main \
+
+all : $(PROGRAMS)
+
+clean :
+	rm -f $(PROGRAMS) *.o
+
+# int delta problem
+deltas_main.o : deltas_main.c deltas.h
+	$(CC) -c $<
+
+deltas_main : deltas_main.o read_deltas.o
+	$(CC) -o $@ $^
+
+read_deltas.o : read_deltas.c deltas.h
+	$(CC) -c $<
+
+save_deltas.o : save_deltas.c deltas.h
+	$(CC) -c $<
+
+save_deltas : save_deltas.o deltas.h
+	$(CC) -o $@ $^
+
+# print_graph
+print_graph.o : print_graph.c
+	$(CC) -c $<
+
+print_graph_demo.o : print_graph_demo.c
+	$(CC) -c $<
+
+print_graph_demo : print_graph_demo.o print_graph.o
+	$(CC) -o $@ $^
+
+graph_file.o : graph_file.c
+	$(CC) -c $<
+
+graph_file : graph_file.o print_graph.o read_deltas.o
+	$(CC) -o $@ $^
+
+# tree problem
+tree_main : tree_main.o tree_funcs.o
+	$(CC) -o $@ $^
+
+tree_main.o : tree_main.c tree.h
+	$(CC) -c $<
+
+tree_funcs.o : tree_funcs.c tree.h
+	$(CC) -c $<
+
+

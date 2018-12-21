@@ -1,0 +1,1380 @@
+BST Demo							BST Demo
+Commands:							Commands:
+  print:          shows contents of the tree in sorted order	  print:          shows contents of the tree in sorted order
+  show:           shows contents in pre-order indicating its 	  show:           shows contents in pre-order indicating its 
+  clear:          eliminates all elements from the tree		  clear:          eliminates all elements from the tree
+  quit:           exit the program				  quit:           exit the program
+  add <name>:     inserts the given string into the tree, dup	  add <name>:     inserts the given string into the tree, dup
+  find <name>:    prints FOUND if the name is in the tree, NO	  find <name>:    prints FOUND if the name is in the tree, NO
+  save <file>:    writes the contents of the tree in post ord	  save <file>:    writes the contents of the tree in post ord
+  load <file>:    clears the current tree and loads the one i	  load <file>:    clears the current tree and loads the one i
+BST> add Mary							BST> add Mary
+BST> add James							BST> add James
+BST> add Elizabeth						BST> add Elizabeth
+BST> add Barbara						BST> add Barbara
+BST> add Anthony						BST> add Anthony
+BST> add Andrew							BST> add Andrew
+BST> add Amanda							BST> add Amanda
+BST> add Alexander						BST> add Alexander
+BST> add Aaron							BST> add Aaron
+BST> add Adam							BST> add Adam
+BST> add Abigail						BST> add Abigail
+BST> add Albert							BST> add Albert
+BST> add Alan							BST> add Alan
+BST> add Alice							BST> add Alice
+BST> add Alexis							BST> add Alexis
+BST> add Amy							BST> add Amy
+BST> add Amber							BST> add Amber
+BST> add Andrea							BST> add Andrea
+BST> add Anna							BST> add Anna
+BST> add Angela							BST> add Angela
+BST> add Ann							BST> add Ann
+BST> add Ashley							BST> add Ashley
+BST> add Arthur							BST> add Arthur
+BST> add Austin							BST> add Austin
+BST> add David							BST> add David
+BST> add Charles						BST> add Charles
+BST> add Betty							BST> add Betty
+BST> add Benjamin						BST> add Benjamin
+BST> add Carol							BST> add Carol
+BST> add Brian							BST> add Brian
+BST> add Brenda							BST> add Brenda
+BST> add Brandon						BST> add Brandon
+BST> add Billy							BST> add Billy
+BST> add Beverly						BST> add Beverly
+BST> add Bobby							BST> add Bobby
+BST> add Carl							BST> add Carl
+BST> add Bryan							BST> add Bryan
+BST> add Bruce							BST> add Bruce
+BST> add Brittany						BST> add Brittany
+BST> add Catherine						BST> add Catherine
+BST> add Carolyn						BST> add Carolyn
+BST> add Christopher						BST> add Christopher
+BST> add Christine						BST> add Christine
+BST> add Christina						BST> add Christina
+BST> add Cheryl							BST> add Cheryl
+BST> add Christian						BST> add Christian
+BST> add Daniel							BST> add Daniel
+BST> add Cynthia						BST> add Cynthia
+BST> add Danielle						BST> add Danielle
+BST> add Dorothy						BST> add Dorothy
+BST> print							BST> print
+Aaron								Aaron
+Abigail								Abigail
+Adam								Adam
+Alan								Alan
+Albert								Albert
+Alexander							Alexander
+Alexis								Alexis
+Alice								Alice
+Amanda								Amanda
+Amber								Amber
+Amy								Amy
+Andrea								Andrea
+Andrew								Andrew
+Angela								Angela
+Ann								Ann
+Anna								Anna
+Anthony								Anthony
+Arthur								Arthur
+Ashley								Ashley
+Austin								Austin
+Barbara								Barbara
+Benjamin							Benjamin
+Betty								Betty
+Beverly								Beverly
+Billy								Billy
+Bobby								Bobby
+Brandon								Brandon
+Brenda								Brenda
+Brian								Brian
+Brittany							Brittany
+Bruce								Bruce
+Bryan								Bryan
+Carl								Carl
+Carol								Carol
+Carolyn								Carolyn
+Catherine							Catherine
+Charles								Charles
+Cheryl								Cheryl
+Christian							Christian
+Christina							Christina
+Christine							Christine
+Christopher							Christopher
+Cynthia								Cynthia
+Daniel								Daniel
+Danielle							Danielle
+David								David
+Dorothy								Dorothy
+Elizabeth							Elizabeth
+James								James
+Mary								Mary
+BST> show							BST> show
+Mary								Mary
+ James								 James
+  Elizabeth							  Elizabeth
+   Barbara							   Barbara
+    Anthony							    Anthony
+     Andrew							     Andrew
+      Amanda							      Amanda
+       Alexander						       Alexander
+        Aaron							        Aaron
+         Adam							         Adam
+          Abigail						          Abigail
+          Albert						          Albert
+           Alan							           Alan
+        Alice							        Alice
+         Alexis							         Alexis
+       Amy							       Amy
+        Amber							        Amber
+        Andrea							        Andrea
+      Anna							      Anna
+       Angela							       Angela
+        Ann							        Ann
+     Ashley							     Ashley
+      Arthur							      Arthur
+      Austin							      Austin
+    David							    David
+     Charles							     Charles
+      Betty							      Betty
+       Benjamin							       Benjamin
+       Carol							       Carol
+        Brian							        Brian
+         Brenda							         Brenda
+          Brandon						          Brandon
+           Billy						           Billy
+            Beverly						            Beverly
+            Bobby						            Bobby
+         Carl							         Carl
+          Bryan							          Bryan
+           Bruce						           Bruce
+            Brittany						            Brittany
+        Catherine						        Catherine
+         Carolyn						         Carolyn
+      Christopher						      Christopher
+       Christine						       Christine
+        Christina						        Christina
+         Cheryl							         Cheryl
+          Christian						          Christian
+       Daniel							       Daniel
+        Cynthia							        Cynthia
+        Danielle						        Danielle
+     Dorothy							     Dorothy
+BST> add Donald							BST> add Donald
+BST> add Deborah						BST> add Deborah
+BST> add Debra							BST> add Debra
+BST> add Dennis							BST> add Dennis
+BST> add Denise							BST> add Denise
+BST> add Diane							BST> add Diane
+BST> add Diana							BST> add Diana
+BST> add Donna							BST> add Donna
+BST> add Doris							BST> add Doris
+BST> add Edward							BST> add Edward
+BST> add Douglas						BST> add Douglas
+BST> add Dylan							BST> add Dylan
+BST> add George							BST> add George
+BST> add Emily							BST> add Emily
+BST> add Gary							BST> add Gary
+BST> add Eric							BST> add Eric
+BST> add Emma							BST> add Emma
+BST> add Frank							BST> add Frank
+BST> add Evelyn							BST> add Evelyn
+BST> add Ethan							BST> add Ethan
+BST> add Eugene							BST> add Eugene
+BST> add Frances						BST> add Frances
+BST> add Gabriel						BST> add Gabriel
+BST> add Helen							BST> add Helen
+BST> add Gregory						BST> add Gregory
+BST> add Gerald							BST> add Gerald
+BST> add Gloria							BST> add Gloria
+BST> add Grace							BST> add Grace
+BST> add Heather						BST> add Heather
+BST> add Harold							BST> add Harold
+BST> add Hannah							BST> add Hannah
+BST> add Harry							BST> add Harry
+BST> add Jacob							BST> add Jacob
+BST> add Jack							BST> add Jack
+BST> add Henry							BST> add Henry
+BST> add Jacqueline						BST> add Jacqueline
+BST> add John							BST> add John
+BST> add Jennifer						BST> add Jennifer
+BST> add Jason							BST> add Jason
+BST> add Janet							BST> add Janet
+BST> add Jane							BST> add Jane
+BST> add Janice							BST> add Janice
+BST> add Jeffrey						BST> add Jeffrey
+BST> add Jean							BST> add Jean
+BST> add Jessica						BST> add Jessica
+BST> add Jerry							BST> add Jerry
+BST> add Jeremy							BST> add Jeremy
+BST> add Jesse							BST> add Jesse
+BST> add Joan							BST> add Joan
+BST> print							BST> print
+Aaron								Aaron
+Abigail								Abigail
+Adam								Adam
+Alan								Alan
+Albert								Albert
+Alexander							Alexander
+Alexis								Alexis
+Alice								Alice
+Amanda								Amanda
+Amber								Amber
+Amy								Amy
+Andrea								Andrea
+Andrew								Andrew
+Angela								Angela
+Ann								Ann
+Anna								Anna
+Anthony								Anthony
+Arthur								Arthur
+Ashley								Ashley
+Austin								Austin
+Barbara								Barbara
+Benjamin							Benjamin
+Betty								Betty
+Beverly								Beverly
+Billy								Billy
+Bobby								Bobby
+Brandon								Brandon
+Brenda								Brenda
+Brian								Brian
+Brittany							Brittany
+Bruce								Bruce
+Bryan								Bryan
+Carl								Carl
+Carol								Carol
+Carolyn								Carolyn
+Catherine							Catherine
+Charles								Charles
+Cheryl								Cheryl
+Christian							Christian
+Christina							Christina
+Christine							Christine
+Christopher							Christopher
+Cynthia								Cynthia
+Daniel								Daniel
+Danielle							Danielle
+David								David
+Deborah								Deborah
+Debra								Debra
+Denise								Denise
+Dennis								Dennis
+Diana								Diana
+Diane								Diane
+Donald								Donald
+Donna								Donna
+Doris								Doris
+Dorothy								Dorothy
+Douglas								Douglas
+Dylan								Dylan
+Edward								Edward
+Elizabeth							Elizabeth
+Emily								Emily
+Emma								Emma
+Eric								Eric
+Ethan								Ethan
+Eugene								Eugene
+Evelyn								Evelyn
+Frances								Frances
+Frank								Frank
+Gabriel								Gabriel
+Gary								Gary
+George								George
+Gerald								Gerald
+Gloria								Gloria
+Grace								Grace
+Gregory								Gregory
+Hannah								Hannah
+Harold								Harold
+Harry								Harry
+Heather								Heather
+Helen								Helen
+Henry								Henry
+Jack								Jack
+Jacob								Jacob
+Jacqueline							Jacqueline
+James								James
+Jane								Jane
+Janet								Janet
+Janice								Janice
+Jason								Jason
+Jean								Jean
+Jeffrey								Jeffrey
+Jennifer							Jennifer
+Jeremy								Jeremy
+Jerry								Jerry
+Jesse								Jesse
+Jessica								Jessica
+Joan								Joan
+John								John
+Mary								Mary
+BST> show							BST> show
+Mary								Mary
+ James								 James
+  Elizabeth							  Elizabeth
+   Barbara							   Barbara
+    Anthony							    Anthony
+     Andrew							     Andrew
+      Amanda							      Amanda
+       Alexander						       Alexander
+        Aaron							        Aaron
+         Adam							         Adam
+          Abigail						          Abigail
+          Albert						          Albert
+           Alan							           Alan
+        Alice							        Alice
+         Alexis							         Alexis
+       Amy							       Amy
+        Amber							        Amber
+        Andrea							        Andrea
+      Anna							      Anna
+       Angela							       Angela
+        Ann							        Ann
+     Ashley							     Ashley
+      Arthur							      Arthur
+      Austin							      Austin
+    David							    David
+     Charles							     Charles
+      Betty							      Betty
+       Benjamin							       Benjamin
+       Carol							       Carol
+        Brian							        Brian
+         Brenda							         Brenda
+          Brandon						          Brandon
+           Billy						           Billy
+            Beverly						            Beverly
+            Bobby						            Bobby
+         Carl							         Carl
+          Bryan							          Bryan
+           Bruce						           Bruce
+            Brittany						            Brittany
+        Catherine						        Catherine
+         Carolyn						         Carolyn
+      Christopher						      Christopher
+       Christine						       Christine
+        Christina						        Christina
+         Cheryl							         Cheryl
+          Christian						          Christian
+       Daniel							       Daniel
+        Cynthia							        Cynthia
+        Danielle						        Danielle
+     Dorothy							     Dorothy
+      Donald							      Donald
+       Deborah							       Deborah
+        Debra							        Debra
+         Dennis							         Dennis
+          Denise						          Denise
+          Diane							          Diane
+           Diana						           Diana
+       Donna							       Donna
+        Doris							        Doris
+      Edward							      Edward
+       Douglas							       Douglas
+        Dylan							        Dylan
+   George							   George
+    Emily							    Emily
+     Gary							     Gary
+      Eric							      Eric
+       Emma							       Emma
+       Frank							       Frank
+        Evelyn							        Evelyn
+         Ethan							         Ethan
+          Eugene						          Eugene
+         Frances						         Frances
+        Gabriel							        Gabriel
+    Helen							    Helen
+     Gregory							     Gregory
+      Gerald							      Gerald
+       Gloria							       Gloria
+        Grace							        Grace
+      Heather							      Heather
+       Harold							       Harold
+        Hannah							        Hannah
+        Harry							        Harry
+     Jacob							     Jacob
+      Jack							      Jack
+       Henry							       Henry
+      Jacqueline						      Jacqueline
+  John								  John
+   Jennifer							   Jennifer
+    Jason							    Jason
+     Janet							     Janet
+      Jane							      Jane
+      Janice							      Janice
+     Jeffrey							     Jeffrey
+      Jean							      Jean
+    Jessica							    Jessica
+     Jerry							     Jerry
+      Jeremy							      Jeremy
+      Jesse							      Jesse
+     Joan							     Joan
+BST> add Joe							BST> add Joe
+BST> add Linda							BST> add Linda
+BST> add Joseph							BST> add Joseph
+BST> add Jonathan						BST> add Jonathan
+BST> add Johnny							BST> add Johnny
+BST> add Jose							BST> add Jose
+BST> add Jordan							BST> add Jordan
+BST> add Karen							BST> add Karen
+BST> add Joshua							BST> add Joshua
+BST> add Justin							BST> add Justin
+BST> add Julie							BST> add Julie
+BST> add Joyce							BST> add Joyce
+BST> add Judith							BST> add Judith
+BST> add Juan							BST> add Juan
+BST> add Julia							BST> add Julia
+BST> add Judy							BST> add Judy
+BST> add Kimberly						BST> add Kimberly
+BST> add Kenneth						BST> add Kenneth
+BST> add Kathleen						BST> add Kathleen
+BST> add Katherine						BST> add Katherine
+BST> add Kelly							BST> add Kelly
+BST> add Keith							BST> add Keith
+BST> add Kathryn						BST> add Kathryn
+BST> add Kayla							BST> add Kayla
+BST> add Kevin							BST> add Kevin
+BST> add Laura							BST> add Laura
+BST> add Larry							BST> add Larry
+BST> add Kyle							BST> add Kyle
+BST> add Lauren							BST> add Lauren
+BST> add Lawrence						BST> add Lawrence
+BST> add Margaret						BST> add Margaret
+BST> add Lisa							BST> add Lisa
+BST> add Madison						BST> add Madison
+BST> add Louis							BST> add Louis
+BST> add Lori							BST> add Lori
+BST> add Logan							BST> add Logan
+BST> add Mark							BST> add Mark
+BST> add Maria							BST> add Maria
+BST> add Marie							BST> add Marie
+BST> add Marilyn						BST> add Marilyn
+BST> add Martha							BST> add Martha
+BST> add Patricia						BST> add Patricia
+BST> add Michael						BST> add Michael
+BST> add Matthew						BST> add Matthew
+BST> add Melissa						BST> add Melissa
+BST> add Megan							BST> add Megan
+BST> add Nancy							BST> add Nancy
+BST> add Michelle						BST> add Michelle
+BST> add Nicholas						BST> add Nicholas
+BST> add Nathan							BST> add Nathan
+BST> add Natalie						BST> add Natalie
+BST> add Pamela							BST> add Pamela
+BST> add Nicole							BST> add Nicole
+BST> add Olivia							BST> add Olivia
+BST> add Noah							BST> add Noah
+BST> add Robert							BST> add Robert
+BST> add Richard						BST> add Richard
+BST> add Paul							BST> add Paul
+BST> add Patrick						BST> add Patrick
+BST> add Rebecca						BST> add Rebecca
+BST> add Raymond						BST> add Raymond
+BST> add Rachel							BST> add Rachel
+BST> add Peter							BST> add Peter
+BST> add Philip							BST> add Philip
+BST> add Ralph							BST> add Ralph
+BST> add Randy							BST> add Randy
+BST> add William						BST> add William
+BST> add Susan							BST> add Susan
+BST> add Sarah							BST> add Sarah
+BST> add Sandra							BST> add Sandra
+BST> add Ronald							BST> add Ronald
+BST> add Roger							BST> add Roger
+BST> add Ryan							BST> add Ryan
+BST> add Ruth							BST> add Ruth
+BST> add Roy							BST> add Roy
+BST> add Rose							BST> add Rose
+BST> add Russell						BST> add Russell
+BST> add Samantha						BST> add Samantha
+BST> add Samuel							BST> add Samuel
+BST> add Sara							BST> add Sara
+BST> add Steven							BST> add Steven
+BST> add Stephanie						BST> add Stephanie
+BST> add Sharon							BST> add Sharon
+BST> add Scott							BST> add Scott
+BST> add Sean							BST> add Sean
+BST> add Shirley						BST> add Shirley
+BST> add Stephen						BST> add Stephen
+BST> add Thomas							BST> add Thomas
+BST> add Terry							BST> add Terry
+BST> add Teresa							BST> add Teresa
+BST> add Theresa						BST> add Theresa
+BST> add Timothy						BST> add Timothy
+BST> add Tiffany						BST> add Tiffany
+BST> add Virginia						BST> add Virginia
+BST> add Tyler							BST> add Tyler
+BST> add Victoria						BST> add Victoria
+BST> add Vincent						BST> add Vincent
+BST> add Walter							BST> add Walter
+BST> add Wayne							BST> add Wayne
+BST> add Zachary						BST> add Zachary
+BST> add Willie							BST> add Willie
+BST> print							BST> print
+Aaron								Aaron
+Abigail								Abigail
+Adam								Adam
+Alan								Alan
+Albert								Albert
+Alexander							Alexander
+Alexis								Alexis
+Alice								Alice
+Amanda								Amanda
+Amber								Amber
+Amy								Amy
+Andrea								Andrea
+Andrew								Andrew
+Angela								Angela
+Ann								Ann
+Anna								Anna
+Anthony								Anthony
+Arthur								Arthur
+Ashley								Ashley
+Austin								Austin
+Barbara								Barbara
+Benjamin							Benjamin
+Betty								Betty
+Beverly								Beverly
+Billy								Billy
+Bobby								Bobby
+Brandon								Brandon
+Brenda								Brenda
+Brian								Brian
+Brittany							Brittany
+Bruce								Bruce
+Bryan								Bryan
+Carl								Carl
+Carol								Carol
+Carolyn								Carolyn
+Catherine							Catherine
+Charles								Charles
+Cheryl								Cheryl
+Christian							Christian
+Christina							Christina
+Christine							Christine
+Christopher							Christopher
+Cynthia								Cynthia
+Daniel								Daniel
+Danielle							Danielle
+David								David
+Deborah								Deborah
+Debra								Debra
+Denise								Denise
+Dennis								Dennis
+Diana								Diana
+Diane								Diane
+Donald								Donald
+Donna								Donna
+Doris								Doris
+Dorothy								Dorothy
+Douglas								Douglas
+Dylan								Dylan
+Edward								Edward
+Elizabeth							Elizabeth
+Emily								Emily
+Emma								Emma
+Eric								Eric
+Ethan								Ethan
+Eugene								Eugene
+Evelyn								Evelyn
+Frances								Frances
+Frank								Frank
+Gabriel								Gabriel
+Gary								Gary
+George								George
+Gerald								Gerald
+Gloria								Gloria
+Grace								Grace
+Gregory								Gregory
+Hannah								Hannah
+Harold								Harold
+Harry								Harry
+Heather								Heather
+Helen								Helen
+Henry								Henry
+Jack								Jack
+Jacob								Jacob
+Jacqueline							Jacqueline
+James								James
+Jane								Jane
+Janet								Janet
+Janice								Janice
+Jason								Jason
+Jean								Jean
+Jeffrey								Jeffrey
+Jennifer							Jennifer
+Jeremy								Jeremy
+Jerry								Jerry
+Jesse								Jesse
+Jessica								Jessica
+Joan								Joan
+Joe								Joe
+John								John
+Johnny								Johnny
+Jonathan							Jonathan
+Jordan								Jordan
+Jose								Jose
+Joseph								Joseph
+Joshua								Joshua
+Joyce								Joyce
+Juan								Juan
+Judith								Judith
+Judy								Judy
+Julia								Julia
+Julie								Julie
+Justin								Justin
+Karen								Karen
+Katherine							Katherine
+Kathleen							Kathleen
+Kathryn								Kathryn
+Kayla								Kayla
+Keith								Keith
+Kelly								Kelly
+Kenneth								Kenneth
+Kevin								Kevin
+Kimberly							Kimberly
+Kyle								Kyle
+Larry								Larry
+Laura								Laura
+Lauren								Lauren
+Lawrence							Lawrence
+Linda								Linda
+Lisa								Lisa
+Logan								Logan
+Lori								Lori
+Louis								Louis
+Madison								Madison
+Margaret							Margaret
+Maria								Maria
+Marie								Marie
+Marilyn								Marilyn
+Mark								Mark
+Martha								Martha
+Mary								Mary
+Matthew								Matthew
+Megan								Megan
+Melissa								Melissa
+Michael								Michael
+Michelle							Michelle
+Nancy								Nancy
+Natalie								Natalie
+Nathan								Nathan
+Nicholas							Nicholas
+Nicole								Nicole
+Noah								Noah
+Olivia								Olivia
+Pamela								Pamela
+Patricia							Patricia
+Patrick								Patrick
+Paul								Paul
+Peter								Peter
+Philip								Philip
+Rachel								Rachel
+Ralph								Ralph
+Randy								Randy
+Raymond								Raymond
+Rebecca								Rebecca
+Richard								Richard
+Robert								Robert
+Roger								Roger
+Ronald								Ronald
+Rose								Rose
+Roy								Roy
+Russell								Russell
+Ruth								Ruth
+Ryan								Ryan
+Samantha							Samantha
+Samuel								Samuel
+Sandra								Sandra
+Sara								Sara
+Sarah								Sarah
+Scott								Scott
+Sean								Sean
+Sharon								Sharon
+Shirley								Shirley
+Stephanie							Stephanie
+Stephen								Stephen
+Steven								Steven
+Susan								Susan
+Teresa								Teresa
+Terry								Terry
+Theresa								Theresa
+Thomas								Thomas
+Tiffany								Tiffany
+Timothy								Timothy
+Tyler								Tyler
+Victoria							Victoria
+Vincent								Vincent
+Virginia							Virginia
+Walter								Walter
+Wayne								Wayne
+William								William
+Willie								Willie
+Zachary								Zachary
+BST> show							BST> show
+Mary								Mary
+ James								 James
+  Elizabeth							  Elizabeth
+   Barbara							   Barbara
+    Anthony							    Anthony
+     Andrew							     Andrew
+      Amanda							      Amanda
+       Alexander						       Alexander
+        Aaron							        Aaron
+         Adam							         Adam
+          Abigail						          Abigail
+          Albert						          Albert
+           Alan							           Alan
+        Alice							        Alice
+         Alexis							         Alexis
+       Amy							       Amy
+        Amber							        Amber
+        Andrea							        Andrea
+      Anna							      Anna
+       Angela							       Angela
+        Ann							        Ann
+     Ashley							     Ashley
+      Arthur							      Arthur
+      Austin							      Austin
+    David							    David
+     Charles							     Charles
+      Betty							      Betty
+       Benjamin							       Benjamin
+       Carol							       Carol
+        Brian							        Brian
+         Brenda							         Brenda
+          Brandon						          Brandon
+           Billy						           Billy
+            Beverly						            Beverly
+            Bobby						            Bobby
+         Carl							         Carl
+          Bryan							          Bryan
+           Bruce						           Bruce
+            Brittany						            Brittany
+        Catherine						        Catherine
+         Carolyn						         Carolyn
+      Christopher						      Christopher
+       Christine						       Christine
+        Christina						        Christina
+         Cheryl							         Cheryl
+          Christian						          Christian
+       Daniel							       Daniel
+        Cynthia							        Cynthia
+        Danielle						        Danielle
+     Dorothy							     Dorothy
+      Donald							      Donald
+       Deborah							       Deborah
+        Debra							        Debra
+         Dennis							         Dennis
+          Denise						          Denise
+          Diane							          Diane
+           Diana						           Diana
+       Donna							       Donna
+        Doris							        Doris
+      Edward							      Edward
+       Douglas							       Douglas
+        Dylan							        Dylan
+   George							   George
+    Emily							    Emily
+     Gary							     Gary
+      Eric							      Eric
+       Emma							       Emma
+       Frank							       Frank
+        Evelyn							        Evelyn
+         Ethan							         Ethan
+          Eugene						          Eugene
+         Frances						         Frances
+        Gabriel							        Gabriel
+    Helen							    Helen
+     Gregory							     Gregory
+      Gerald							      Gerald
+       Gloria							       Gloria
+        Grace							        Grace
+      Heather							      Heather
+       Harold							       Harold
+        Hannah							        Hannah
+        Harry							        Harry
+     Jacob							     Jacob
+      Jack							      Jack
+       Henry							       Henry
+      Jacqueline						      Jacqueline
+  John								  John
+   Jennifer							   Jennifer
+    Jason							    Jason
+     Janet							     Janet
+      Jane							      Jane
+      Janice							      Janice
+     Jeffrey							     Jeffrey
+      Jean							      Jean
+    Jessica							    Jessica
+     Jerry							     Jerry
+      Jeremy							      Jeremy
+      Jesse							      Jesse
+     Joan							     Joan
+      Joe							      Joe
+   Linda							   Linda
+    Joseph							    Joseph
+     Jonathan							     Jonathan
+      Johnny							      Johnny
+      Jose							      Jose
+       Jordan							       Jordan
+     Karen							     Karen
+      Joshua							      Joshua
+       Justin							       Justin
+        Julie							        Julie
+         Joyce							         Joyce
+          Judith						          Judith
+           Juan							           Juan
+           Julia						           Julia
+            Judy						            Judy
+      Kimberly							      Kimberly
+       Kenneth							       Kenneth
+        Kathleen						        Kathleen
+         Katherine						         Katherine
+         Kelly							         Kelly
+          Keith							          Keith
+           Kathryn						           Kathryn
+            Kayla						            Kayla
+        Kevin							        Kevin
+       Laura							       Laura
+        Larry							        Larry
+         Kyle							         Kyle
+        Lauren							        Lauren
+         Lawrence						         Lawrence
+    Margaret							    Margaret
+     Lisa							     Lisa
+      Madison							      Madison
+       Louis							       Louis
+        Lori							        Lori
+         Logan							         Logan
+     Mark							     Mark
+      Maria							      Maria
+       Marie							       Marie
+        Marilyn							        Marilyn
+      Martha							      Martha
+ Patricia							 Patricia
+  Michael							  Michael
+   Matthew							   Matthew
+    Melissa							    Melissa
+     Megan							     Megan
+   Nancy							   Nancy
+    Michelle							    Michelle
+    Nicholas							    Nicholas
+     Nathan							     Nathan
+      Natalie							      Natalie
+     Pamela							     Pamela
+      Nicole							      Nicole
+       Olivia							       Olivia
+        Noah							        Noah
+  Robert							  Robert
+   Richard							   Richard
+    Paul							    Paul
+     Patrick							     Patrick
+     Rebecca							     Rebecca
+      Raymond							      Raymond
+       Rachel							       Rachel
+        Peter							        Peter
+         Philip							         Philip
+        Ralph							        Ralph
+         Randy							         Randy
+   William							   William
+    Susan							    Susan
+     Sarah							     Sarah
+      Sandra							      Sandra
+       Ronald							       Ronald
+        Roger							        Roger
+        Ryan							        Ryan
+         Ruth							         Ruth
+          Roy							          Roy
+           Rose							           Rose
+           Russell						           Russell
+         Samantha						         Samantha
+          Samuel						          Samuel
+       Sara							       Sara
+      Steven							      Steven
+       Stephanie						       Stephanie
+        Sharon							        Sharon
+         Scott							         Scott
+          Sean							          Sean
+         Shirley						         Shirley
+        Stephen							        Stephen
+     Thomas							     Thomas
+      Terry							      Terry
+       Teresa							       Teresa
+       Theresa							       Theresa
+      Timothy							      Timothy
+       Tiffany							       Tiffany
+       Virginia							       Virginia
+        Tyler							        Tyler
+         Victoria						         Victoria
+          Vincent						          Vincent
+        Walter							        Walter
+         Wayne							         Wayne
+    Zachary							    Zachary
+     Willie							     Willie
+BST> find Steven						BST> find Steven
+FOUND								FOUND
+BST> find Barbara						BST> find Barbara
+FOUND								FOUND
+BST> find Anakin						BST> find Anakin
+NOT FOUND							NOT FOUND
+BST> find Leia							BST> find Leia
+NOT FOUND							NOT FOUND
+BST> find Luke							BST> find Luke
+NOT FOUND							NOT FOUND
+BST> find Virginia						BST> find Virginia
+FOUND								FOUND
+BST> save test-data/big.tree					BST> save test-data/big.tree
+BST> clear							BST> clear
+BST> add Sandra							BST> add Sandra
+BST> add Ronald							BST> add Ronald
+BST> add Roger							BST> add Roger
+BST> add Ryan							BST> add Ryan
+BST> add Ruth							BST> add Ruth
+BST> add Roy							BST> add Roy
+BST> add Rose							BST> add Rose
+BST> add Russell						BST> add Russell
+BST> add Samantha						BST> add Samantha
+BST> add Samuel							BST> add Samuel
+BST> add Sara							BST> add Sara
+BST> add Steven							BST> add Steven
+BST> add Stephanie						BST> add Stephanie
+BST> add Sharon							BST> add Sharon
+BST> add Scott							BST> add Scott
+BST> add Sean							BST> add Sean
+BST> add Shirley						BST> add Shirley
+BST> add Stephen						BST> add Stephen
+BST> add Thomas							BST> add Thomas
+BST> add Terry							BST> add Terry
+BST> add Teresa							BST> add Teresa
+BST> add Theresa						BST> add Theresa
+BST> add Timothy						BST> add Timothy
+BST> add Tiffany						BST> add Tiffany
+BST> add Virginia						BST> add Virginia
+BST> add Tyler							BST> add Tyler
+BST> add Victoria						BST> add Victoria
+BST> add Vincent						BST> add Vincent
+BST> add Walter							BST> add Walter
+BST> add Wayne							BST> add Wayne
+BST> add Zachary						BST> add Zachary
+BST> add Willie							BST> add Willie
+BST> find Sara							BST> find Sara
+FOUND								FOUND
+BST> find Virginia						BST> find Virginia
+FOUND								FOUND
+BST> find Anna							BST> find Anna
+NOT FOUND							NOT FOUND
+BST> find Kevin							BST> find Kevin
+NOT FOUND							NOT FOUND
+BST> load test-data/big.tree					BST> load test-data/big.tree
+BST> print							BST> print
+Aaron								Aaron
+Abigail								Abigail
+Adam								Adam
+Alan								Alan
+Albert								Albert
+Alexander							Alexander
+Alexis								Alexis
+Alice								Alice
+Amanda								Amanda
+Amber								Amber
+Amy								Amy
+Andrea								Andrea
+Andrew								Andrew
+Angela								Angela
+Ann								Ann
+Anna								Anna
+Anthony								Anthony
+Arthur								Arthur
+Ashley								Ashley
+Austin								Austin
+Barbara								Barbara
+Benjamin							Benjamin
+Betty								Betty
+Beverly								Beverly
+Billy								Billy
+Bobby								Bobby
+Brandon								Brandon
+Brenda								Brenda
+Brian								Brian
+Brittany							Brittany
+Bruce								Bruce
+Bryan								Bryan
+Carl								Carl
+Carol								Carol
+Carolyn								Carolyn
+Catherine							Catherine
+Charles								Charles
+Cheryl								Cheryl
+Christian							Christian
+Christina							Christina
+Christine							Christine
+Christopher							Christopher
+Cynthia								Cynthia
+Daniel								Daniel
+Danielle							Danielle
+David								David
+Deborah								Deborah
+Debra								Debra
+Denise								Denise
+Dennis								Dennis
+Diana								Diana
+Diane								Diane
+Donald								Donald
+Donna								Donna
+Doris								Doris
+Dorothy								Dorothy
+Douglas								Douglas
+Dylan								Dylan
+Edward								Edward
+Elizabeth							Elizabeth
+Emily								Emily
+Emma								Emma
+Eric								Eric
+Ethan								Ethan
+Eugene								Eugene
+Evelyn								Evelyn
+Frances								Frances
+Frank								Frank
+Gabriel								Gabriel
+Gary								Gary
+George								George
+Gerald								Gerald
+Gloria								Gloria
+Grace								Grace
+Gregory								Gregory
+Hannah								Hannah
+Harold								Harold
+Harry								Harry
+Heather								Heather
+Helen								Helen
+Henry								Henry
+Jack								Jack
+Jacob								Jacob
+Jacqueline							Jacqueline
+James								James
+Jane								Jane
+Janet								Janet
+Janice								Janice
+Jason								Jason
+Jean								Jean
+Jeffrey								Jeffrey
+Jennifer							Jennifer
+Jeremy								Jeremy
+Jerry								Jerry
+Jesse								Jesse
+Jessica								Jessica
+Joan								Joan
+Joe								Joe
+John								John
+Johnny								Johnny
+Jonathan							Jonathan
+Jordan								Jordan
+Jose								Jose
+Joseph								Joseph
+Joshua								Joshua
+Joyce								Joyce
+Juan								Juan
+Judith								Judith
+Judy								Judy
+Julia								Julia
+Julie								Julie
+Justin								Justin
+Karen								Karen
+Katherine							Katherine
+Kathleen							Kathleen
+Kathryn								Kathryn
+Kayla								Kayla
+Keith								Keith
+Kelly								Kelly
+Kenneth								Kenneth
+Kevin								Kevin
+Kimberly							Kimberly
+Kyle								Kyle
+Larry								Larry
+Laura								Laura
+Lauren								Lauren
+Lawrence							Lawrence
+Linda								Linda
+Lisa								Lisa
+Logan								Logan
+Lori								Lori
+Louis								Louis
+Madison								Madison
+Margaret							Margaret
+Maria								Maria
+Marie								Marie
+Marilyn								Marilyn
+Mark								Mark
+Martha								Martha
+Mary								Mary
+Matthew								Matthew
+Megan								Megan
+Melissa								Melissa
+Michael								Michael
+Michelle							Michelle
+Nancy								Nancy
+Natalie								Natalie
+Nathan								Nathan
+Nicholas							Nicholas
+Nicole								Nicole
+Noah								Noah
+Olivia								Olivia
+Pamela								Pamela
+Patricia							Patricia
+Patrick								Patrick
+Paul								Paul
+Peter								Peter
+Philip								Philip
+Rachel								Rachel
+Ralph								Ralph
+Randy								Randy
+Raymond								Raymond
+Rebecca								Rebecca
+Richard								Richard
+Robert								Robert
+Roger								Roger
+Ronald								Ronald
+Rose								Rose
+Roy								Roy
+Russell								Russell
+Ruth								Ruth
+Ryan								Ryan
+Samantha							Samantha
+Samuel								Samuel
+Sandra								Sandra
+Sara								Sara
+Sarah								Sarah
+Scott								Scott
+Sean								Sean
+Sharon								Sharon
+Shirley								Shirley
+Stephanie							Stephanie
+Stephen								Stephen
+Steven								Steven
+Susan								Susan
+Teresa								Teresa
+Terry								Terry
+Theresa								Theresa
+Thomas								Thomas
+Tiffany								Tiffany
+Timothy								Timothy
+Tyler								Tyler
+Victoria							Victoria
+Vincent								Vincent
+Virginia							Virginia
+Walter								Walter
+Wayne								Wayne
+William								William
+Willie								Willie
+Zachary								Zachary
+BST> show							BST> show
+Mary								Mary
+ James								 James
+  Elizabeth							  Elizabeth
+   Barbara							   Barbara
+    Anthony							    Anthony
+     Andrew							     Andrew
+      Amanda							      Amanda
+       Alexander						       Alexander
+        Aaron							        Aaron
+         Adam							         Adam
+          Abigail						          Abigail
+          Albert						          Albert
+           Alan							           Alan
+        Alice							        Alice
+         Alexis							         Alexis
+       Amy							       Amy
+        Amber							        Amber
+        Andrea							        Andrea
+      Anna							      Anna
+       Angela							       Angela
+        Ann							        Ann
+     Ashley							     Ashley
+      Arthur							      Arthur
+      Austin							      Austin
+    David							    David
+     Charles							     Charles
+      Betty							      Betty
+       Benjamin							       Benjamin
+       Carol							       Carol
+        Brian							        Brian
+         Brenda							         Brenda
+          Brandon						          Brandon
+           Billy						           Billy
+            Beverly						            Beverly
+            Bobby						            Bobby
+         Carl							         Carl
+          Bryan							          Bryan
+           Bruce						           Bruce
+            Brittany						            Brittany
+        Catherine						        Catherine
+         Carolyn						         Carolyn
+      Christopher						      Christopher
+       Christine						       Christine
+        Christina						        Christina
+         Cheryl							         Cheryl
+          Christian						          Christian
+       Daniel							       Daniel
+        Cynthia							        Cynthia
+        Danielle						        Danielle
+     Dorothy							     Dorothy
+      Donald							      Donald
+       Deborah							       Deborah
+        Debra							        Debra
+         Dennis							         Dennis
+          Denise						          Denise
+          Diane							          Diane
+           Diana						           Diana
+       Donna							       Donna
+        Doris							        Doris
+      Edward							      Edward
+       Douglas							       Douglas
+        Dylan							        Dylan
+   George							   George
+    Emily							    Emily
+     Gary							     Gary
+      Eric							      Eric
+       Emma							       Emma
+       Frank							       Frank
+        Evelyn							        Evelyn
+         Ethan							         Ethan
+          Eugene						          Eugene
+         Frances						         Frances
+        Gabriel							        Gabriel
+    Helen							    Helen
+     Gregory							     Gregory
+      Gerald							      Gerald
+       Gloria							       Gloria
+        Grace							        Grace
+      Heather							      Heather
+       Harold							       Harold
+        Hannah							        Hannah
+        Harry							        Harry
+     Jacob							     Jacob
+      Jack							      Jack
+       Henry							       Henry
+      Jacqueline						      Jacqueline
+  John								  John
+   Jennifer							   Jennifer
+    Jason							    Jason
+     Janet							     Janet
+      Jane							      Jane
+      Janice							      Janice
+     Jeffrey							     Jeffrey
+      Jean							      Jean
+    Jessica							    Jessica
+     Jerry							     Jerry
+      Jeremy							      Jeremy
+      Jesse							      Jesse
+     Joan							     Joan
+      Joe							      Joe
+   Linda							   Linda
+    Joseph							    Joseph
+     Jonathan							     Jonathan
+      Johnny							      Johnny
+      Jose							      Jose
+       Jordan							       Jordan
+     Karen							     Karen
+      Joshua							      Joshua
+       Justin							       Justin
+        Julie							        Julie
+         Joyce							         Joyce
+          Judith						          Judith
+           Juan							           Juan
+           Julia						           Julia
+            Judy						            Judy
+      Kimberly							      Kimberly
+       Kenneth							       Kenneth
+        Kathleen						        Kathleen
+         Katherine						         Katherine
+         Kelly							         Kelly
+          Keith							          Keith
+           Kathryn						           Kathryn
+            Kayla						            Kayla
+        Kevin							        Kevin
+       Laura							       Laura
+        Larry							        Larry
+         Kyle							         Kyle
+        Lauren							        Lauren
+         Lawrence						         Lawrence
+    Margaret							    Margaret
+     Lisa							     Lisa
+      Madison							      Madison
+       Louis							       Louis
+        Lori							        Lori
+         Logan							         Logan
+     Mark							     Mark
+      Maria							      Maria
+       Marie							       Marie
+        Marilyn							        Marilyn
+      Martha							      Martha
+ Patricia							 Patricia
+  Michael							  Michael
+   Matthew							   Matthew
+    Melissa							    Melissa
+     Megan							     Megan
+   Nancy							   Nancy
+    Michelle							    Michelle
+    Nicholas							    Nicholas
+     Nathan							     Nathan
+      Natalie							      Natalie
+     Pamela							     Pamela
+      Nicole							      Nicole
+       Olivia							       Olivia
+        Noah							        Noah
+  Robert							  Robert
+   Richard							   Richard
+    Paul							    Paul
+     Patrick							     Patrick
+     Rebecca							     Rebecca
+      Raymond							      Raymond
+       Rachel							       Rachel
+        Peter							        Peter
+         Philip							         Philip
+        Ralph							        Ralph
+         Randy							         Randy
+   William							   William
+    Susan							    Susan
+     Sarah							     Sarah
+      Sandra							      Sandra
+       Ronald							       Ronald
+        Roger							        Roger
+        Ryan							        Ryan
+         Ruth							         Ruth
+          Roy							          Roy
+           Rose							           Rose
+           Russell						           Russell
+         Samantha						         Samantha
+          Samuel						          Samuel
+       Sara							       Sara
+      Steven							      Steven
+       Stephanie						       Stephanie
+        Sharon							        Sharon
+         Scott							         Scott
+          Sean							          Sean
+         Shirley						         Shirley
+        Stephen							        Stephen
+     Thomas							     Thomas
+      Terry							      Terry
+       Teresa							       Teresa
+       Theresa							       Theresa
+      Timothy							      Timothy
+       Tiffany							       Tiffany
+       Virginia							       Virginia
+        Tyler							        Tyler
+         Victoria						         Victoria
+          Vincent						          Vincent
+        Walter							        Walter
+         Wayne							         Wayne
+    Zachary							    Zachary
+     Willie							     Willie
+BST> find Sara							BST> find Sara
+FOUND								FOUND
+BST> find Virginia						BST> find Virginia
+FOUND								FOUND
+BST> find Anna							BST> find Anna
+FOUND								FOUND
+BST> find Kevin							BST> find Kevin
+FOUND								FOUND
+BST>								BST>
