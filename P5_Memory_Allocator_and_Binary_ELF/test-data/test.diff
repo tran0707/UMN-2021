@@ -1,0 +1,120 @@
+Symbol Table							Symbol Table
+- 26856 bytes offset from start of file				- 26856 bytes offset from start of file
+- 2736 bytes total size						- 2736 bytes total size
+- 24 bytes per entry						- 24 bytes per entry
+- 114 entries							- 114 entries
+[idx]      TYPE SIZE NAME					[idx]      TYPE SIZE NAME
+[  0]:   NOTYPE    0 <NONE>					[  0]:   NOTYPE    0 <NONE>
+[  1]:  SECTION    0 <NONE>					[  1]:  SECTION    0 <NONE>
+[  2]:  SECTION    0 <NONE>					[  2]:  SECTION    0 <NONE>
+[  3]:  SECTION    0 <NONE>					[  3]:  SECTION    0 <NONE>
+[  4]:  SECTION    0 <NONE>					[  4]:  SECTION    0 <NONE>
+[  5]:  SECTION    0 <NONE>					[  5]:  SECTION    0 <NONE>
+[  6]:  SECTION    0 <NONE>					[  6]:  SECTION    0 <NONE>
+[  7]:  SECTION    0 <NONE>					[  7]:  SECTION    0 <NONE>
+[  8]:  SECTION    0 <NONE>					[  8]:  SECTION    0 <NONE>
+[  9]:  SECTION    0 <NONE>					[  9]:  SECTION    0 <NONE>
+[ 10]:  SECTION    0 <NONE>					[ 10]:  SECTION    0 <NONE>
+[ 11]:  SECTION    0 <NONE>					[ 11]:  SECTION    0 <NONE>
+[ 12]:  SECTION    0 <NONE>					[ 12]:  SECTION    0 <NONE>
+[ 13]:  SECTION    0 <NONE>					[ 13]:  SECTION    0 <NONE>
+[ 14]:  SECTION    0 <NONE>					[ 14]:  SECTION    0 <NONE>
+[ 15]:  SECTION    0 <NONE>					[ 15]:  SECTION    0 <NONE>
+[ 16]:  SECTION    0 <NONE>					[ 16]:  SECTION    0 <NONE>
+[ 17]:  SECTION    0 <NONE>					[ 17]:  SECTION    0 <NONE>
+[ 18]:  SECTION    0 <NONE>					[ 18]:  SECTION    0 <NONE>
+[ 19]:  SECTION    0 <NONE>					[ 19]:  SECTION    0 <NONE>
+[ 20]:  SECTION    0 <NONE>					[ 20]:  SECTION    0 <NONE>
+[ 21]:  SECTION    0 <NONE>					[ 21]:  SECTION    0 <NONE>
+[ 22]:  SECTION    0 <NONE>					[ 22]:  SECTION    0 <NONE>
+[ 23]:  SECTION    0 <NONE>					[ 23]:  SECTION    0 <NONE>
+[ 24]:  SECTION    0 <NONE>					[ 24]:  SECTION    0 <NONE>
+[ 25]:  SECTION    0 <NONE>					[ 25]:  SECTION    0 <NONE>
+[ 26]:  SECTION    0 <NONE>					[ 26]:  SECTION    0 <NONE>
+[ 27]:  SECTION    0 <NONE>					[ 27]:  SECTION    0 <NONE>
+[ 28]:  SECTION    0 <NONE>					[ 28]:  SECTION    0 <NONE>
+[ 29]:  SECTION    0 <NONE>					[ 29]:  SECTION    0 <NONE>
+[ 30]:  SECTION    0 <NONE>					[ 30]:  SECTION    0 <NONE>
+[ 31]:  SECTION    0 <NONE>					[ 31]:  SECTION    0 <NONE>
+[ 32]:     FILE    0 init.c					[ 32]:     FILE    0 init.c
+[ 33]:     FILE    0 crtstuff.c					[ 33]:     FILE    0 crtstuff.c
+[ 34]:     FUNC    0 deregister_tm_clones			[ 34]:     FUNC    0 deregister_tm_clones
+[ 35]:     FUNC    0 register_tm_clones				[ 35]:     FUNC    0 register_tm_clones
+[ 36]:     FUNC    0 __do_global_dtors_aux			[ 36]:     FUNC    0 __do_global_dtors_aux
+[ 37]:   OBJECT    1 completed.6973				[ 37]:   OBJECT    1 completed.6973
+[ 38]:   OBJECT    0 __do_global_dtors_aux_fini_array_entry	[ 38]:   OBJECT    0 __do_global_dtors_aux_fini_array_entry
+[ 39]:     FUNC    0 frame_dummy				[ 39]:     FUNC    0 frame_dummy
+[ 40]:   OBJECT    0 __frame_dummy_init_array_entry		[ 40]:   OBJECT    0 __frame_dummy_init_array_entry
+[ 41]:     FILE    0 warsim.c					[ 41]:     FILE    0 warsim.c
+[ 42]:     FILE    0 libwar.c					[ 42]:     FILE    0 libwar.c
+[ 43]:     FILE    0 libcardlist.c				[ 43]:     FILE    0 libcardlist.c
+[ 44]:     FILE    0 crtstuff.c					[ 44]:     FILE    0 crtstuff.c
+[ 45]:   OBJECT    0 __FRAME_END__				[ 45]:   OBJECT    0 __FRAME_END__
+[ 46]:     FILE    0 <NONE>					[ 46]:     FILE    0 <NONE>
+[ 47]:   NOTYPE    0 __init_array_end				[ 47]:   NOTYPE    0 __init_array_end
+[ 48]:   OBJECT    0 _DYNAMIC					[ 48]:   OBJECT    0 _DYNAMIC
+[ 49]:   NOTYPE    0 __init_array_start				[ 49]:   NOTYPE    0 __init_array_start
+[ 50]:   NOTYPE    0 __GNU_EH_FRAME_HDR				[ 50]:   NOTYPE    0 __GNU_EH_FRAME_HDR
+[ 51]:   OBJECT    0 _GLOBAL_OFFSET_TABLE_			[ 51]:   OBJECT    0 _GLOBAL_OFFSET_TABLE_
+[ 52]:     FUNC    2 __libc_csu_fini				[ 52]:     FUNC    2 __libc_csu_fini
+[ 53]:     FUNC   33 queue_front				[ 53]:     FUNC   33 queue_front
+[ 54]:     FUNC   41 cardlist_error				[ 54]:     FUNC   41 cardlist_error
+[ 55]:     FUNC   58 reverse					[ 55]:     FUNC   58 reverse
+[ 56]:     FUNC    0 free@@GLIBC_2.2.5				[ 56]:     FUNC    0 free@@GLIBC_2.2.5
+[ 57]:     FUNC   42 card2str					[ 57]:     FUNC   42 card2str
+[ 58]:     FUNC   98 deal2					[ 58]:     FUNC   98 deal2
+[ 59]:     FUNC   36 stack_free					[ 59]:     FUNC   36 stack_free
+[ 60]:     FUNC   11 queue_empty				[ 60]:     FUNC   11 queue_empty
+[ 61]:   NOTYPE    0 _ITM_deregisterTMCloneTable		[ 61]:   NOTYPE    0 _ITM_deregisterTMCloneTable
+[ 62]:     FUNC   21 length					[ 62]:     FUNC   21 length
+[ 63]:   NOTYPE    0 data_start					[ 63]:   NOTYPE    0 data_start
+[ 64]:     FUNC   57 queue_copy					[ 64]:     FUNC   57 queue_copy
+[ 65]:     FUNC   33 stack_top					[ 65]:     FUNC   33 stack_top
+[ 66]:     FUNC    0 __isoc99_fscanf@@GLIBC_2.7			[ 66]:     FUNC    0 __isoc99_fscanf@@GLIBC_2.7
+[ 67]:     FUNC    0 puts@@GLIBC_2.2.5				[ 67]:     FUNC    0 puts@@GLIBC_2.2.5
+[ 68]:   NOTYPE    0 _edata					[ 68]:   NOTYPE    0 _edata
+[ 69]:     FUNC  167 read_deck					[ 69]:     FUNC  167 read_deck
+[ 70]:   OBJECT   16 stats					[ 70]:   OBJECT   16 stats
+[ 71]:     FUNC    0 fclose@@GLIBC_2.2.5			[ 71]:     FUNC    0 fclose@@GLIBC_2.2.5
+[ 72]:     FUNC   26 new_stack					[ 72]:     FUNC   26 new_stack
+[ 73]:     FUNC    0 _fini					[ 73]:     FUNC    0 _fini
+[ 74]:     FUNC  126 print_list					[ 74]:     FUNC  126 print_list
+[ 75]:     FUNC    0 __stack_chk_fail@@GLIBC_2.4		[ 75]:     FUNC    0 __stack_chk_fail@@GLIBC_2.4
+[ 76]:     FUNC    0 printf@@GLIBC_2.2.5			[ 76]:     FUNC    0 printf@@GLIBC_2.2.5
+[ 77]:     FUNC   11 stack_empty				[ 77]:     FUNC   11 stack_empty
+[ 78]:     FUNC   43 queue_rotate				[ 78]:     FUNC   43 queue_rotate
+[ 79]:     FUNC    0 fputc@@GLIBC_2.2.5				[ 79]:     FUNC    0 fputc@@GLIBC_2.2.5
+[ 80]:     FUNC    0 __libc_start_main@@GLIBC_2.2.5		[ 80]:     FUNC    0 __libc_start_main@@GLIBC_2.2.5
+[ 81]:   NOTYPE    0 __data_start				[ 81]:   NOTYPE    0 __data_start
+[ 82]:     FUNC    0 fprintf@@GLIBC_2.2.5			[ 82]:     FUNC    0 fprintf@@GLIBC_2.2.5
+[ 83]:   NOTYPE    0 __gmon_start__				[ 83]:   NOTYPE    0 __gmon_start__
+[ 84]:     FUNC   34 new_queue					[ 84]:     FUNC   34 new_queue
+[ 85]:     FUNC    0 strtol@@GLIBC_2.2.5			[ 85]:     FUNC    0 strtol@@GLIBC_2.2.5
+[ 86]:   OBJECT    0 __dso_handle				[ 86]:   OBJECT    0 __dso_handle
+[ 87]:     FUNC  490 playwar					[ 87]:     FUNC  490 playwar
+[ 88]:   OBJECT    4 _IO_stdin_used				[ 88]:   OBJECT    4 _IO_stdin_used
+[ 89]:     FUNC  101 __libc_csu_init				[ 89]:     FUNC  101 __libc_csu_init
+[ 90]:     FUNC    0 malloc@@GLIBC_2.2.5			[ 90]:     FUNC    0 malloc@@GLIBC_2.2.5
+[ 91]:     FUNC    0 __isoc99_sscanf@@GLIBC_2.7			[ 91]:     FUNC    0 __isoc99_sscanf@@GLIBC_2.7
+[ 92]:   NOTYPE    0 _end					[ 92]:   NOTYPE    0 _end
+[ 93]:     FUNC   43 _start					[ 93]:     FUNC   43 _start
+[ 94]:     FUNC  306 start_battle				[ 94]:     FUNC  306 start_battle
+[ 95]:   NOTYPE    0 __bss_start				[ 95]:   NOTYPE    0 __bss_start
+[ 96]:     FUNC   69 str2card					[ 96]:     FUNC   69 str2card
+[ 97]:     FUNC  423 main					[ 97]:     FUNC  423 main
+[ 98]:     FUNC   66 list_copy					[ 98]:     FUNC   66 list_copy
+[ 99]:     FUNC   73 queue_add					[ 99]:     FUNC   73 queue_add
+[100]:     FUNC   32 queue_remove				[100]:     FUNC   32 queue_remove
+[101]:     FUNC  288 end_battle					[101]:     FUNC  288 end_battle
+[102]:     FUNC    0 fopen@@GLIBC_2.2.5				[102]:     FUNC    0 fopen@@GLIBC_2.2.5
+[103]:     FUNC   36 queue_free					[103]:     FUNC   36 queue_free
+[104]:     FUNC   42 stack_push					[104]:     FUNC   42 stack_push
+[105]:     FUNC    0 sprintf@@GLIBC_2.2.5			[105]:     FUNC    0 sprintf@@GLIBC_2.2.5
+[106]:     FUNC    0 exit@@GLIBC_2.2.5				[106]:     FUNC    0 exit@@GLIBC_2.2.5
+[107]:     FUNC    0 fwrite@@GLIBC_2.2.5			[107]:     FUNC    0 fwrite@@GLIBC_2.2.5
+[108]:   OBJECT    0 __TMC_END__				[108]:   OBJECT    0 __TMC_END__
+[109]:   NOTYPE    0 _ITM_registerTMCloneTable			[109]:   NOTYPE    0 _ITM_registerTMCloneTable
+[110]:     FUNC   32 stack_pop					[110]:     FUNC   32 stack_pop
+[111]:     FUNC    0 __cxa_finalize@@GLIBC_2.2.5		[111]:     FUNC    0 __cxa_finalize@@GLIBC_2.2.5
+[112]:     FUNC    0 _init					[112]:     FUNC    0 _init
+[113]:   OBJECT    8 stderr@@GLIBC_2.2.5			[113]:   OBJECT    8 stderr@@GLIBC_2.2.5
